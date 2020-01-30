@@ -29,10 +29,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
+				<!-- https://mvnrepository.com/artifact/io.projectreactor.addons/reactor-extra -->
+		<dependency>
+		    <groupId>io.projectreactor.addons</groupId>
+		    <artifactId>reactor-extra</artifactId>
+		    </dependency>
+		
 		<dependency>
 			<groupId>io.pivotal.spring.cloud</groupId>
 			<artifactId>spring-cloud-services-starter-circuit-breaker</artifactId>
@@ -40,6 +47,10 @@
 		<dependency>
       		<groupId>org.springframework.cloud</groupId>
       		<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+    	</dependency>
+    	<dependency>
+      		<groupId>org.springframework.cloud</groupId>
+      		<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
     	</dependency>
 		<dependency>
 		    <groupId>org.projectreactor</groupId>

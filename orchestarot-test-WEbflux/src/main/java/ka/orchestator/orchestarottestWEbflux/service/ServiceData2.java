@@ -14,7 +14,7 @@ public class ServiceData2 {
 	WebClient.Builder webClientBuilder;
 	
 	public Flux<Response> GetData (){
-		return webClientBuilder.build().get()
+		return webClientBuilder.baseUrl("http://Transparent-API").build().get()
 				.uri("/GetAll")
 				.retrieve()
 				.bodyToFlux(Response.class);
